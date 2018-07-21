@@ -6,8 +6,19 @@
 	</head>
 	<body>
 		<script>
-var indexPage = HC.require("./js/hipercode/"+(HC.parseUrl().search).slice(1)+".js");
-document.querySelector("body").appendChild(indexPage);
+var reqPage = (HC.parseUrl().search).slice(1);
+switch(reqPage) {
+	case "":
+		reqPage = "index";
+		break;
+	case "index":
+		break;
+	default:
+		reqPage = "404";
+		break;
+}
+var page = HC.require("./js/hipercode/"+reqPage+".js");
+document.querySelector("body").appendChild(page);
 		</script>
 	</body>
 </html>
