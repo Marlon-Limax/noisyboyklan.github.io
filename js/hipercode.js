@@ -15,7 +15,7 @@ var HC = {
 		}
 		return;
 	},
-	require: function(src, callback) {
+	require: function(src) {
 		var script = document.createElement("script");
 		script.type = "text/javascript";
 		script.src = src;
