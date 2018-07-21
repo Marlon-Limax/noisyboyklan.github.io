@@ -10,10 +10,18 @@ var HC = {
 					callback(data);
 				}
 			}
-			return;
 		} else {
-			return "usage include(url, callback, method)";
+			console.log("usage include(url, callback, method)");
 		}
+		return;
+	},
+	require: function(src, callback) {
+		var script = document.createElement("script");
+		script.type = "text/javascript";
+		script.src = src;
+		script.innerHTML = "";
+		callback(script);
+		return;
 	},
 	urlArgs: function (url = window.location.href, separator = "?"){
 		return url.substring(url.indexOf(separator)+1);

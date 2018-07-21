@@ -5,6 +5,10 @@
 		<script type="text/javascript" src="./js/hipercode.js"></script>
 	</head>
 	<body>
-		<script type="text/javascript" src="./js/hipercode/index.js"></script>
+		<script>
+HC.require("./js/hipercode/index.js", function(tag){
+	document.querySelector("body").appendChild(tag);
+});
+		</script>
 	</body>
 </html>
