@@ -20,8 +20,7 @@ var HC = {
 		script.type = "text/javascript";
 		script.src = src;
 		script.innerHTML = "";
-		callback(script);
-		return;
+		return script;
 	},
 	parseUrl: function (reqUrl = window.location.href){
 		return new URL(reqUrl);
