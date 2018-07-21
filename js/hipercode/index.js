@@ -1,3 +1,3 @@
 HC.include("./html/head.html", function(data){
-	document.write(data);
+	document.querySelector("body").append(data);
 });
