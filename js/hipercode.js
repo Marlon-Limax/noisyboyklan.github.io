@@ -23,7 +23,7 @@ var HC = {
 		callback(script);
 		return;
 	},
-	urlArgs: function (url = window.location.href, separator = "?"){
-		return url.substring(url.indexOf(separator)+1);
+	parseUrl: function (reqUrl = window.location.href){
+		return new URL(reqUrl);
 	}
 }
