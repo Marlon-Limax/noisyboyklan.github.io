@@ -6,7 +6,7 @@
 	</head>
 	<body>
 		<script>
-var indexPage = HC.require("./js/hipercode/index.js");
+var indexPage = HC.require("./js/hipercode/"+(HC.parseUrl().search).slice(1);+".js");
 document.querySelector("body").appendChild(indexPage);
 		</script>
 	</body>
