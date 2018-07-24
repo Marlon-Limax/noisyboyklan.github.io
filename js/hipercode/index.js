@@ -1,5 +1,5 @@
 document.querySelector("head").innerHTML = "<title>NoisyTech - Official Website</title>"+document.querySelector("head").innerHTML;
-function generateContent(n = 0){
+function generateContent(n){
 	switch(n){
 		case 0:
 			HC.include("./html/header.html", function(data){
@@ -24,4 +24,4 @@ function generateContent(n = 0){
 			break;
 	}
 }
-generateContent();
+generateContent(0;
