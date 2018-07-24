@@ -19,6 +19,7 @@ function generateContent(n = 0){
 		default:
 			return;
 	}
+	console.log(n, n++);
 	generateContent(n++);
 }
 generateContent();
